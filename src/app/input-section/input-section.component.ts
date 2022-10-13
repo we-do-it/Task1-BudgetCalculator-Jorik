@@ -18,8 +18,9 @@ export class InputSectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.item)
     // if item has a value
-    if (this.item) {
+    if (this.item.amount !== 0 && this.item.description !== "") {
       // this means that an existing item object was passed into this component
       // therefore this is not a new item
       this.isNewItem = false;
