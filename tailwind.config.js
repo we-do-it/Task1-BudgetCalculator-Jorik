@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'budget': "url('/assets/images/budgetBG.jpeg')",
+      },
+    },
   },
   variants: {
     extend: {},

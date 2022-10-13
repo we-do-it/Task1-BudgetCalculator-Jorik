@@ -1,0 +1,14 @@
+<div class="flex text-white mb-1 justify-between">
+  <p>{{item.description}}</p>
+  <div class="flex space-x-4">
+    <p>€ {{item.amount}}</p>
+    <button (click)="onEditItem()">
+      <img alt="delete" class="w-4 h-3 hover:opacity-60"
+           src="../../assets/icons/edit.svg">
+    </button>
+    <button (click)="onDeleteItem()">
+      <img alt="delete" class="w-4 h-4 hover:opacity-60"
+           src="../../assets/icons/delete.svg">
+    </button>
+  </div>
+</div>

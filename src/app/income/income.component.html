@@ -1,0 +1,7 @@
+<div class="bg-green-300 rounded-lg px-5 py-3">
+  <h2 class="text-white font-bold text-xl mb-3">Income:</h2>
+  <div *ngFor="let item of budgetItems">
+    <app-money-item (deleteItem)="onDelete(item)" (editItem)="onEdit(item)" *ngIf="item.amount >= 0"
+                    [item]="item"></app-money-item>
+  </div>
+</div>

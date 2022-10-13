@@ -1,0 +1,14 @@
+<h2 class="px-10 pt-10 text-gray-800 text-3xl text-center mb-10 font-bold">Fill in the form below to calculate your
+  monthly
+  budget!</h2>
+<app-input-section (formSubmit)="addItem($event)" [item]="item"></app-input-section>
+<app-budget [totalBudget]="totalBudget"></app-budget>
+<div class="flex px-10 mt-10 space-x-5">
+  <div class="w-1/2">
+    <app-income (delete)="deleteItem($event)" (update)="updateItem($event)" [budgetItems]="budgetItems"></app-income>
+  </div>
+  <div class="w-1/2">
+    <app-expenses (delete)="deleteItem($event)" (update)="updateItem($event)"
+                  [budgetItems]="budgetItems"></app-expenses>
+  </div>
+</div>
